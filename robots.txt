@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Update this if you use a custom domain or different path
+Sitemap: https://afterexpiry.github.io/sitemap.xml
