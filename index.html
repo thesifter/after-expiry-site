@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,18 +14,28 @@
       content="Heavy, melodic, and unflinching."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/logo.jpg" />
-    <link rel="icon" href="assets/img/logo.jpg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta
+      property="og:image"
+      content="assets/img/brand/alien-band-members-desert.jpg"
+    />
+    <link rel="icon" href="assets/img/brand/ae-sigil-white-on-black.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css?v=proto-3" />
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
-        <a href="#top" class="brand"
-          ><img src="assets/img/logo.jpg" alt="After Expiry logo"
+        <a href="#top" class="brand" aria-label="After Expiry home"
+          ><img src="assets/img/brand/ae-sigil-white-on-black.jpg" alt=""
         /></a>
-        <nav class="nav">
-          <a href="#about">About</a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">After Expiry?</a>
           <a href="#music">Music</a>
           <a href="#social">Social</a>
           <a href="#merch">Merch</a>
@@ -45,11 +55,18 @@
             <a class="btn ghost" href="#about">About</a>
           </div>
 
-          <!-- Foreground portrait image inside the hero -->
-          <figure class="hero-art">
+          <figure class="hero-art alien-members">
             <img
-              src="assets/img/ae-bg-portrait.jpg"
-              alt="After Expiry portrait"
+              src="assets/img/working/alien-member-front-pose-alpha.png"
+              alt="Alien band member front pose"
+            />
+            <img
+              src="assets/img/working/alien-member-looking-up-alpha.png"
+              alt="Alien band member looking up"
+            />
+            <img
+              src="assets/img/working/alien-member-pointing-up-alpha.png"
+              alt="Alien band member pointing upward"
             />
           </figure>
         </div>
@@ -57,7 +74,7 @@
 
       <section id="about" class="content">
         <div class="wrap">
-          <h2>About</h2>
+          <h2>After Expiry?</h2>
           <p>
             After Expiry explore the tenets of life beyond the veil, seeks
             solitude for the stars, dethrone mountains to carve out the night
@@ -77,10 +94,19 @@
               width="560"
               height="315"
               src="https://www.youtube.com/embed/JQiWja6tEYU?si=w6Yy3khY_k_n8fli"
-              title="YouTube video player"
+              title="After Expiry - Edge of the Known Universe promo video"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
               referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
               allowfullscreen
             ></iframe>
           </div>
@@ -153,12 +179,8 @@
 
     <footer class="site-footer">
       <div class="wrap">
-        <small>© <span id="year"></span> After Expiry</small>
+        <small>© 2026 After Expiry</small>
       </div>
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
