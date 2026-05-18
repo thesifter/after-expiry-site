@@ -44,13 +44,3 @@ python3 -m http.server 5500
 py -m http.server 5500
 ```
 
-## Customize
-
-- Edit titles, tagline, and sections in `index.html`.
-- Replace the Bandcamp iframe src with your real embed.
-- Swap social links in the **Social** section.
-- Replace `assets/img/logo.svg` with your own logo.
-
-## Next (optional)
-
-When you're ready, init a git repo and push to GitHub Pages.
