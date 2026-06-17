@@ -125,7 +125,7 @@ body {
 /* hero */
 .hero {
   position: relative;
-  padding: clamp(52px, 8vw, 76px) 0 58px;
+  padding: clamp(74px, 10vw, 104px) 0 58px;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
@@ -191,6 +191,47 @@ body {
 .btn.ghost {
   color: var(--ink);
   background: rgba(255, 246, 232, 0.36);
+}
+
+.album-callout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+  max-width: 790px;
+  padding: clamp(18px, 3vw, 26px);
+  margin-top: 32px;
+  background: rgba(255, 246, 232, 0.78);
+  border: 1px solid rgba(23, 17, 13, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 18px 46px rgba(74, 39, 17, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.album-callout .kicker {
+  margin: 0 0 6px;
+  color: #793a21;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.album-callout h2 {
+  margin: 0;
+  font-size: clamp(26px, 4vw, 44px);
+  line-height: 1;
+}
+
+.album-callout p:last-child {
+  max-width: 31rem;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.album-link {
+  white-space: nowrap;
 }
 
 .alien-members {
@@ -294,6 +335,38 @@ body {
   text-align: center;
 }
 
+.music-section h3 {
+  margin: 34px 0 14px;
+  font-size: 20px;
+}
+
+.album-player {
+  position: relative;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: 20px auto 18px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(23, 17, 13, 0.24);
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(74, 39, 17, 0.24);
+}
+
+.album-player iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.album-actions {
+  margin-bottom: 10px;
+}
+
 .music-video {
   position: relative;
   max-width: 800px;
@@ -333,8 +406,22 @@ body {
   border-radius: 8px;
 }
 
+.content .yt-btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content .yt-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .yt-btn .yt-icon {
   display: inline-block;
+}
+
+.music-btn {
+  background: #17110d;
 }
 
 /* footer */
@@ -346,7 +433,7 @@ body {
 
 @media (width <= 720px) {
   .hero {
-    padding: 54px 0 42px;
+    padding: 70px 0 42px;
   }
 
   .hero::before {
@@ -367,6 +454,15 @@ body {
 
   .alien-members img {
     max-height: 420px;
+  }
+
+  .album-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .album-link {
+    justify-self: start;
+    white-space: normal;
   }
 }
 
@@ -418,6 +514,14 @@ body {
   }
 
   .music-video iframe {
+    border-radius: 6px;
+  }
+
+  .album-player {
+    border-radius: 6px;
+  }
+
+  .album-player iframe {
     border-radius: 6px;
   }
 }
