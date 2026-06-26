@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "python3 -m http.server 8080",
     "lint": "npm run lint:html && npm run lint:css && npm run format:check",
-    "lint:html": "htmlhint index.html about.html",
+    "lint:html": "htmlhint index.html about.html album.html",
     "lint:css": "stylelint \"assets/css/**/*.css\"",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
